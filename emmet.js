@@ -13858,9 +13858,12 @@ emmet.define('editor', function(require, _) {
 			}
 				
 			try {
-				// this.createSelection(start, end);
+				var x = ScrollX;
+				var y = ScrollY;
 				target.Text = utils.replaceSubstring(content, value, start, end);
 				this.createSelection(firstTabStop.start, firstTabStop.end);
+				ScrollX = x;
+				ScrollY = y;
 			} catch(e){}
 		},
 		
