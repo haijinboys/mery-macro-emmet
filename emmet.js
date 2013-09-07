@@ -10,7 +10,7 @@ var emmet_action = "expand_abbreviation";
 // ""                         : ポップアップで選択
 // "expand_abbreviation"      : 省略コードの展開
 // "wrap_with_abbreviation"   : 省略コードで包括
-// "match_pair_outward"       : 要素の外側を選択
+// "match_pair_outward"       : 要素の外側を選択(Meryの仕様上、動作不能)
 // "match_pair_inward"        : 要素の内側を選択(Meryの仕様上、動作不能)
 // "next_edit_point"          : 次の編集箇所へ移動
 // "prev_edit_point"          : 前の編集箇所へ移動
@@ -13951,7 +13951,7 @@ if (emmet_action != "") {
 	var m = CreatePopupMenu();
 	m.Add("省略コードの展開(&E)", 1);
 	m.Add("省略コードで包括(&W)", 2);
-	m.Add("要素の外側を選択(&O)", 3);
+	// m.Add("要素の外側を選択(&O)", 3);
 	// m.Add("要素の内側を選択(&I)", 4);
 	m.Add("次の編集箇所へ移動(&N)", 5);
 	m.Add("前の編集箇所へ移動(&P)", 6);
